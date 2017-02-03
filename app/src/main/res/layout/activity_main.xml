@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeeee"
+    tools:context="com.yh.telaidian.MainActivity">
+    <RelativeLayout
+        android:id="@+id/Home_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Home_btn1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/home_btn_select__select"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#999999" />
+
+        <RadioButton
+            android:id="@+id/Home_btn2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/home_btn_discover_select"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="#999999" />
+
+        <RadioButton
+            android:id="@+id/Home_btn3"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/home_btn_center_select"
+            android:gravity="center"
+            android:textColor="#999999">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/Home_btn4"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/home_btn_community_select"
+            android:gravity="center"
+            android:text="社区"
+            android:textColor="#999999" />
+
+        <RadioButton
+            android:id="@+id/Home_btn5"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/home_btn_me_select"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="#999999" />
+
+    </RadioGroup>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/skin_footbar_scan"/>
+
+
+</RelativeLayout>
